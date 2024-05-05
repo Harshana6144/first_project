@@ -19,9 +19,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title:"new app",
-      home: Scaffold(),
+    return  MaterialApp(
+      title:"app demo",
+      home: Scaffold(
+        appBar: AppBar(
+        title:const Text("Flutter App") ,
+        backgroundColor: Colors.green,
+        ) ,
+
+        body:const Icon(Icons.notifications_active_sharp),
+      ),
     );
   }
 }
